@@ -21,6 +21,6 @@
   },
   "description": "> Andijon viloyatidagi yagona Prezident texnika kollejining to'liq veb-sayti.",
   "main": "postcss.config.js",
-  "author": "",
+  "author": "Axror Muhandis",
   "license": "ISC"
 }

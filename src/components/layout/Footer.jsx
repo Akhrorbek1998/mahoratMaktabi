@@ -109,7 +109,7 @@ export default function Footer({ setPage }) {
           </p>
           <div className="flex items-center gap-2 font-body text-[#F5EDD6]/25 text-xs">
             <span className="w-2 h-2 rounded-full bg-[#4ECDC4] animate-pulse" />
-            Prezident Texnika Kolleji · Andijon viloyati · 🇺🇿
+            Andijon ilg'or kasbiy mahorat texnikumi  · Andijon viloyati · 🇺🇿
           </div>
         </div>
       </div>

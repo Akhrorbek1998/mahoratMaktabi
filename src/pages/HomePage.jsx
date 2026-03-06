@@ -72,7 +72,7 @@ function HeroSection({ setPage }) {
         <div ref={badgeRef}>
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[10px] font-body font-bold tracking-[0.25em] uppercase border text-[#D4A843] border-[#D4A843]/30 bg-[#D4A843]/8 backdrop-blur-sm mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D4A843] animate-pulse" />
-            Prezident Texnika Kolleji · Andijon viloyati
+            Andijon ilg'or kasbiy mahorat texnikumi · Andijon viloyati
           </span>
         </div>
 
