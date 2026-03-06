@@ -22,7 +22,7 @@ function NewsDetail({ item, onBack }) {
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-[#F5EDD6] mt-5 mb-4 leading-tight">
             {item.title}
           </h1>
-          <div className="font-body text-[#F5EDD6]/35 text-sm">{item.date} · AIMM Tahririyati</div>
+          <div className="font-body text-[#F5EDD6]/35 text-sm">{item.date} · AIKMT Tahririyati</div>
         </div>
 
         <div className="space-y-5 animate-fade-up" style={{ animationDelay: '0.1s' }}>
@@ -60,7 +60,7 @@ export default function NewsPage() {
             Yangiliklar & <span className="text-[#D4A843]">Tadbirlar</span>
           </h1>
           <p className="font-body text-[#F5EDD6]/60 text-xl max-w-xl mx-auto">
-            AIMM'ning so'nggi yutuqlari, hamkorliklari va imkoniyatlari bilan xabardor bo'ling.
+            AIKMT'ning so'nggi yutuqlari, hamkorliklari va imkoniyatlari bilan xabardor bo'ling.
           </p>
         </div>
       </section>

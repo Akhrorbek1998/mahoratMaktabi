@@ -186,7 +186,7 @@ export default function ContactPage() {
             {[
               { icon: '📍', label: 'Manzil', val: 'Andijon shahri, O\'zbekiston', sub: 'Andijon viloyati, 170100' },
               { icon: '📞', label: 'Telefon', val: '+998 (74) 123-45-67', sub: 'Dush–Shan, 8:00–18:00' },
-              { icon: '✉️', label: 'Email', val: 'info@aimm.edu.uz', sub: 'admissions@aimm.edu.uz' },
+              { icon: '✉️', label: 'Email', val: 'info@AIKMT.edu.uz', sub: 'admissions@AIKMT.edu.uz' },
               { icon: '🕐', label: 'Ish vaqti', val: 'Dush–Shan: 08:00–18:00', sub: 'Qabul bo\'limi doim ochiq' },
             ].map((item) => (
               <div

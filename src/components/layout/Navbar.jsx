@@ -35,7 +35,7 @@ export default function Navbar({ page, setPage }) {
         <button
           onClick={() => navigate('Home')}
           className="flex items-center gap-3 group"
-          aria-label="AIMM — Bosh sahifaga o'tish"
+          aria-label="AIKMT — Bosh sahifaga o'tish"
         >
           <div className="relative w-10 h-10 flex-shrink-0">
             <div className="absolute inset-0 rounded-xl bg-[#D4A843] rotate-6 opacity-80 group-hover:rotate-12 transition-transform duration-300" />
@@ -44,7 +44,7 @@ export default function Navbar({ page, setPage }) {
             </div>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="font-display font-bold text-[#F5EDD6] text-base tracking-wide">AIMM</span>
+            <span className="font-display font-bold text-[#F5EDD6] text-base tracking-wide">AIKMT</span>
             <span className="font-body text-[#D4A843] text-[9px] font-semibold tracking-[0.25em] uppercase">Maktabi</span>
           </div>
         </button>

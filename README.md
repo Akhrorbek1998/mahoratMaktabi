@@ -1,4 +1,4 @@
-# 🏛️ AIMM — Andijon Ilg'or Mahorat Maktabi
+# 🏛️ AIKMT — Andijon Ilg'or Mahorat Maktabi
 
 > Andijon viloyatidagi yagona Prezident texnika kollejining to'liq veb-sayti.
 
@@ -29,7 +29,7 @@ Brauzerda oching: **http://localhost:5173**
 ## 📁 Loyiha Tuzilmasi
 
 ```
-aimm-college/
+AIKMT-college/
 ├── public/
 │   ├── favicon.ico
 │   ├── robots.txt

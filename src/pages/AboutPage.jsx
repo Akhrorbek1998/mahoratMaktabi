@@ -45,7 +45,7 @@ export default function AboutPage() {
               Andijon viloyatidagi yagona Prezident kolleji
             </h2>
             <p className="font-body text-[#F5EDD6]/65 leading-relaxed mb-4 text-lg">
-              Prezident maqomimiz shunchaki unvon emas — bu mas'uliyat. Hukumat farmoni asosida tashkil etilgan AIMM qat'iy milliy standartlar asosida ishlaydi va eng yuqori darajadagi moliyaviy qo'llab-quvvatlash oladi.
+              Prezident maqomimiz shunchaki unvon emas — bu mas'uliyat. Hukumat farmoni asosida tashkil etilgan AIKMT qat'iy milliy standartlar asosida ishlaydi va eng yuqori darajadagi moliyaviy qo'llab-quvvatlash oladi.
             </p>
             <p className="font-body text-[#F5EDD6]/45 leading-relaxed mb-8">
               Bu maqom talabalarimizga davlat stipendiyalari, xalqaro almashinuv dasturlarida ustuvor o'rin va ish bozorida katta e'tibor qozongan diplom beradi.

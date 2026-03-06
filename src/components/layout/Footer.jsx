@@ -24,7 +24,7 @@ export default function Footer({ setPage }) {
                 </div>
               </div>
               <div>
-                <div className="font-display font-bold text-[#F5EDD6] text-sm">AIMM Maktabi</div>
+                <div className="font-display font-bold text-[#F5EDD6] text-sm">AIKMT Maktabi</div>
                 <div className="font-body text-[#D4A843]/70 text-[9px] tracking-widest uppercase">Andijon · O'zbekiston</div>
               </div>
             </button>
@@ -90,7 +90,7 @@ export default function Footer({ setPage }) {
             <div className="space-y-3 font-body text-[#F5EDD6]/50 text-sm">
               <p>📍 Andijon shahri, O'zbekiston</p>
               <p>📞 +998 (74) 123-45-67</p>
-              <p>✉️ info@aimm.edu.uz</p>
+              <p>✉️ info@AIKMT.edu.uz</p>
               <p className="text-xs text-[#F5EDD6]/30 mt-4">Dush–Shan: 08:00–18:00</p>
             </div>
             <button

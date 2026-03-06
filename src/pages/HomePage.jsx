@@ -17,7 +17,7 @@ function HeroSection({ setPage }) {
     { headline: ["Kelajakni", "Hoziroq", "Qur"], accent: 1, sub: "O'zbekistondagi eng innovatsion dual ta'lim tizimi orqali IT sohasida dunyo darajasidagi mutaxassis bo'ling." },
     { headline: ["O'qiy Turib", "Daromad", "Top"], accent: 1, sub: "Haftaning 4 kuni real kompaniyalarda ishlang. Maosh oling. Tajriba orttiring. Diplom oling." },
     { headline: ["Germaniya &", "Koreyada", "Tahsil"], accent: 0, sub: "1-kurs tugagach xalqaro almashinuv dasturiga qo'shiling. Dunyoni kashf eting." },
-    { headline: ["164 Davlatda", "Tan Olinadigan", "Diplom"], accent: 0, sub: "AIMM diplomi xalqaro bozorda qadrli. Dunyoning istalgan joyida ishlash imkoniyati." },
+    { headline: ["164 Davlatda", "Tan Olinadigan", "Diplom"], accent: 0, sub: "AIKMT diplomi xalqaro bozorda qadrli. Dunyoning istalgan joyida ishlash imkoniyati." },
   ];
 
   useGSAP((gsap) => {
@@ -209,7 +209,7 @@ function AboutIntro({ setPage }) {
             texnika kolleji
           </h2>
           <p className="font-body text-[#F5EDD6]/70 text-lg leading-relaxed mb-4">
-            Prezident farmoni asosida tashkil etilgan AIMM — Andijon viloyatidagi yagona Prezident texnika kolleji. Bu maqom ta'lim sifatiga bo'lgan eng yuqori talablarni anglatadi.
+            Prezident farmoni asosida tashkil etilgan AIKMT — Andijon viloyatidagi yagona Prezident texnika kolleji. Bu maqom ta'lim sifatiga bo'lgan eng yuqori talablarni anglatadi.
           </p>
           <p className="font-body text-[#F5EDD6]/50 leading-relaxed mb-8">
             Biz sinf xonasi nazariyasini real kompaniya tajribasi bilan birlashtirgan kashshof Dual ta'lim tizimimiz orqali sanoatga tayyor bitiruvchilar tayyorlaymiz.
@@ -541,7 +541,7 @@ function InternationalSection({ setPage }) {
               Diplom <span className="text-[#D4A843]">164 davlatda</span> tan olinadi
             </h3>
             <p className="font-body text-[#F5EDD6]/50 max-w-md mx-auto mb-7 text-sm">
-              AIMM diplomingiz xalqaro bozorda qadrli. Berlinden Seulgacha — diplom ishlab beradi.
+              AIKMT diplomingiz xalqaro bozorda qadrli. Berlinden Seulgacha — diplom ishlab beradi.
             </p>
             <button
               onClick={() => setPage('Contact')}
