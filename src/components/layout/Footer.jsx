@@ -24,12 +24,12 @@ export default function Footer({ setPage }) {
                 </div>
               </div>
               <div>
-                <div className="font-display font-bold text-[#F5EDD6] text-sm">AIKMT Maktabi</div>
+                <div className="font-display font-bold text-[#F5EDD6] text-sm">AIKMT texnikumi</div>
                 <div className="font-body text-[#D4A843]/70 text-[9px] tracking-widest uppercase">Andijon · O'zbekiston</div>
               </div>
             </button>
             <p className="font-body text-[#F5EDD6]/40 text-xs leading-relaxed mb-5">
-              Andijon viloyatidagi yagona Prezident texnika kolleji. Kelajak mutaxassislarini tayyorlaymiz.
+              Andijon viloyatidagi yagona Prezident texnikumi. Kelajak mutaxassislarini tayyorlaymiz.
             </p>
             {/* Social */}
             <div className="flex gap-2">
@@ -105,7 +105,7 @@ export default function Footer({ setPage }) {
         {/* Bottom bar */}
         <div className="border-t border-[#F5EDD6]/5 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="font-body text-[#F5EDD6]/25 text-xs">
-            © 2025 Andijon Ilg'or Mahorat Maktabi. Barcha huquqlar himoyalangan.
+            © 2025 Andijon Ilg'or Mahorat texnikumi. Barcha huquqlar himoyalangan.
           </p>
           <div className="flex items-center gap-2 font-body text-[#F5EDD6]/25 text-xs">
             <span className="w-2 h-2 rounded-full bg-[#4ECDC4] animate-pulse" />

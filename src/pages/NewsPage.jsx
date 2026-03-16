@@ -32,7 +32,7 @@ function NewsDetail({ item, onBack }) {
             </p>
           ))}
           <p className="font-body text-[#F5EDD6]/40 leading-relaxed text-sm">
-            Kollejimiz haqida qo'shimcha ma'lumot yoki dasturlarimiz uchun Aloqa sahifamizga tashrif buyuring.
+           texnikumimiz haqida qo'shimcha ma'lumot yoki dasturlarimiz uchun Aloqa sahifamizga tashrif buyuring.
           </p>
         </div>
       </div>

@@ -12,13 +12,31 @@ function HeroSection({ setPage }) {
   const subRef = useRef(null);
   const ctaRef = useRef(null);
   const [slideIdx, setSlideIdx] = useState(0);
+  const touchStartX = useRef(null);
+  const autoRef = useRef(null);
 
   const slides = [
     { headline: ["Kelajakni", "Hoziroq", "Qur"], accent: 1, sub: "O'zbekistondagi eng innovatsion dual ta'lim tizimi orqali IT sohasida dunyo darajasidagi mutaxassis bo'ling." },
     { headline: ["O'qiy Turib", "Daromad", "Top"], accent: 1, sub: "Haftaning 4 kuni real kompaniyalarda ishlang. Maosh oling. Tajriba orttiring. Diplom oling." },
     { headline: ["Germaniya &", "Koreyada", "Tahsil"], accent: 0, sub: "1-kurs tugagach xalqaro almashinuv dasturiga qo'shiling. Dunyoni kashf eting." },
-    { headline: ["164 Davlatda", "Tan Olinadigan", "Diplom"], accent: 0, sub: "AIKMT diplomi xalqaro bozorda qadrli. Dunyoning istalgan joyida ishlash imkoniyati." },
+    { headline: ["164 Davlatda", "Tan Olinadigan", "Diplom"], accent: 0, sub: "AIMM diplomi xalqaro bozorda qadrli. Dunyoning istalgan joyida ishlash imkoniyati." },
   ];
+
+  const resetAuto = () => {
+    clearInterval(autoRef.current);
+    autoRef.current = setInterval(() => setSlideIdx((i) => (i + 1) % slides.length), 4500);
+  };
+
+  const prev = () => { setSlideIdx((i) => (i - 1 + slides.length) % slides.length); resetAuto(); };
+  const next = () => { setSlideIdx((i) => (i + 1) % slides.length); resetAuto(); };
+
+  const onTouchStart = (e) => { touchStartX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
+    touchStartX.current = null;
+  };
 
   useGSAP((gsap) => {
     const ctx = gsap.context(() => {
@@ -32,8 +50,8 @@ function HeroSection({ setPage }) {
   }, []);
 
   useEffect(() => {
-    const t = setInterval(() => setSlideIdx((i) => (i + 1) % slides.length), 4500);
-    return () => clearInterval(t);
+    autoRef.current = setInterval(() => setSlideIdx((i) => (i + 1) % slides.length), 4500);
+    return () => clearInterval(autoRef.current);
   }, []);
 
   const slide = slides[slideIdx];
@@ -43,7 +61,27 @@ function HeroSection({ setPage }) {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0B3D2E]"
       aria-label="Kirish bo'limi"
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
     >
+      {/* Prev — faqat desktop */}
+      <button
+        onClick={prev}
+        aria-label="Oldingi slayd"
+        className="hidden md:flex absolute left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 items-center justify-center rounded-full border border-[#D4A843]/30 bg-[#0B3D2E]/60 backdrop-blur-sm text-[#D4A843] text-xl hover:bg-[#D4A843]/15 hover:border-[#D4A843]/70 hover:scale-110 transition-all duration-200"
+      >
+        ←
+      </button>
+
+      {/* Next — faqat desktop */}
+      <button
+        onClick={next}
+        aria-label="Keyingi slayd"
+        className="hidden md:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 items-center justify-center rounded-full border border-[#D4A843]/30 bg-[#0B3D2E]/60 backdrop-blur-sm text-[#D4A843] text-xl hover:bg-[#D4A843]/15 hover:border-[#D4A843]/70 hover:scale-110 transition-all duration-200"
+      >
+        →
+      </button>
+
       {/* Background elements */}
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -72,7 +110,7 @@ function HeroSection({ setPage }) {
         <div ref={badgeRef}>
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[10px] font-body font-bold tracking-[0.25em] uppercase border text-[#D4A843] border-[#D4A843]/30 bg-[#D4A843]/8 backdrop-blur-sm mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D4A843] animate-pulse" />
-            Andijon ilg'or kasbiy mahorat texnikumi · Andijon viloyati
+            Prezident Texnika Kolleji · Andijon viloyati
           </span>
         </div>
 
@@ -113,7 +151,7 @@ function HeroSection({ setPage }) {
           {slides.map((_, i) => (
             <button
               key={i}
-              onClick={() => setSlideIdx(i)}
+              onClick={() => { setSlideIdx(i); resetAuto(); }}
               aria-label={`Slayd ${i + 1}`}
               className={`rounded-full transition-all duration-400 ${
                 i === slideIdx
@@ -209,7 +247,7 @@ function AboutIntro({ setPage }) {
             texnika kolleji
           </h2>
           <p className="font-body text-[#F5EDD6]/70 text-lg leading-relaxed mb-4">
-            Prezident farmoni asosida tashkil etilgan AIKMT — Andijon viloyatidagi yagona Prezident texnika kolleji. Bu maqom ta'lim sifatiga bo'lgan eng yuqori talablarni anglatadi.
+            Prezident farmoni asosida tashkil etilgan AIMM — Andijon viloyatidagi yagona Prezident texnika kolleji. Bu maqom ta'lim sifatiga bo'lgan eng yuqori talablarni anglatadi.
           </p>
           <p className="font-body text-[#F5EDD6]/50 leading-relaxed mb-8">
             Biz sinf xonasi nazariyasini real kompaniya tajribasi bilan birlashtirgan kashshof Dual ta'lim tizimimiz orqali sanoatga tayyor bitiruvchilar tayyorlaymiz.
@@ -541,7 +579,7 @@ function InternationalSection({ setPage }) {
               Diplom <span className="text-[#D4A843]">164 davlatda</span> tan olinadi
             </h3>
             <p className="font-body text-[#F5EDD6]/50 max-w-md mx-auto mb-7 text-sm">
-              AIKMT diplomingiz xalqaro bozorda qadrli. Berlinden Seulgacha — diplom ishlab beradi.
+              AIMM diplomingiz xalqaro bozorda qadrli. Berlinden Seulgacha — diplom ishlab beradi.
             </p>
             <button
               onClick={() => setPage('Contact')}

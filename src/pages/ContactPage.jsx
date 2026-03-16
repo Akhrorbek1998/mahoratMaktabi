@@ -208,7 +208,7 @@ export default function ContactPage() {
             <div className="rounded-2xl overflow-hidden border border-[#F5EDD6]/6 bg-[#0B3D2E] h-[200px] flex flex-col items-center justify-center gap-3">
               <span className="text-5xl">🗺️</span>
               <div className="text-center">
-                <div className="font-body font-bold text-[#F5EDD6] text-sm">Andijon Ilg'or Mahorat Maktabi</div>
+                <div className="font-body font-bold text-[#F5EDD6] text-sm">Andijon Ilg'or Mahorat texnikumi</div>
                 <div className="font-body text-[#F5EDD6]/35 text-xs mt-1">Andijon shahri, O'zbekiston 🇺🇿</div>
               </div>
               <a

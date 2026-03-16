@@ -22,7 +22,7 @@ export default function AboutPage() {
             Shunchaki kollej <span className="text-[#D4A843]">emas</span>
           </h1>
           <p className="font-body text-[#F5EDD6]/65 text-xl leading-relaxed max-w-2xl mx-auto">
-            Andijon Ilg'or Mahorat Maktabi — O'zbekiston yoshlarini global IT karerasiga tayyorlashda yangi standart o'rnatmoqda.
+            Andijon Ilg'or Mahorat texnikumi — O'zbekiston yoshlarini global IT karerasiga tayyorlashda yangi standart o'rnatmoqda.
           </p>
         </div>
       </section>
@@ -37,12 +37,12 @@ export default function AboutPage() {
             <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-[#D4A843]/10 border border-[#D4A843]/25 mb-8">
               <span className="text-3xl">🏛️</span>
               <div>
-                <div className="font-display font-bold text-[#D4A843] text-sm">Prezident Texnika Kolleji</div>
+                <div className="font-display font-bold text-[#D4A843] text-sm">Prezident Texnikumi</div>
                 <div className="font-body text-[#F5EDD6]/40 text-xs">Farmon asosida · Andijon viloyati</div>
               </div>
             </div>
             <h2 className="font-display text-4xl font-bold text-[#F5EDD6] mb-6 leading-tight">
-              Andijon viloyatidagi yagona Prezident kolleji
+              Andijon viloyatidagi yagona Prezident Texnikumi
             </h2>
             <p className="font-body text-[#F5EDD6]/65 leading-relaxed mb-4 text-lg">
               Prezident maqomimiz shunchaki unvon emas — bu mas'uliyat. Hukumat farmoni asosida tashkil etilgan AIKMT qat'iy milliy standartlar asosida ishlaydi va eng yuqori darajadagi moliyaviy qo'llab-quvvatlash oladi.
@@ -67,7 +67,7 @@ export default function AboutPage() {
             className={`space-y-4 transition-all duration-700 delay-200 ${in1 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
           >
             {[
-              { year: "2019", event: "Prezident farmoni bilan Andijon viloyatidagi birinchi Texnika kolleji tashkil etildi" },
+              { year: "2019", event: "Prezident farmoni bilan Andijon viloyatidagi birinchiTexnikumi tashkil etildi" },
               { year: "2020", event: "Birinchi 150 talaba 3 ta IT yo'nalishiga qabul qilindi" },
               { year: "2021", event: "15 ta mintaqaviy texnologiya kompaniyasi bilan dual ta'lim shartnomasi imzolandi" },
               { year: "2022", event: "Germaniya almashinuv dasturi ishga tushdi; birinchi 10 talaba xorijga ketdi" },
@@ -148,7 +148,7 @@ export default function AboutPage() {
               { icon: '🌐', title: 'Global fikrlash', desc: 'Har bir talaba birinchi kundan xalqaro karerayaga tayyorlanadi.' },
               { icon: '💡', title: 'Amaliyot > Nazariya', desc: 'Nazariya asoslanadi; amaliyot o\'zgartiradi. Dual tizimimiz har bir tushunchani real kontekstda qo\'llaydi.' },
               { icon: '❤️', title: 'Talaba muvaffaqiyati', desc: 'Har bir qaror — dars jadvalidan hamkorliklariga qadar — talabalar natijalarini yaxshilash uchun qabul qilinadi.' },
-              { icon: '🏆', title: 'Sifat standarti', desc: 'Prezident kolleji sifatida biz har bo\'limda milliy normadan yuqori standartlarga amal qilamiz.' },
+              { icon: '🏆', title: 'Sifat standarti', desc: 'Prezidenttexnikumi sifatida biz har bo\'limda milliy normadan yuqori standartlarga amal qilamiz.' },
             ].map((v, i) => (
               <div
                 key={v.title}

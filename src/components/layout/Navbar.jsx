@@ -45,7 +45,7 @@ export default function Navbar({ page, setPage }) {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-display font-bold text-[#F5EDD6] text-base tracking-wide">AIKMT</span>
-            <span className="font-body text-[#D4A843] text-[9px] font-semibold tracking-[0.25em] uppercase">Maktabi</span>
+            <span className="font-body text-[#D4A843] text-[9px] font-semibold tracking-[0.25em] uppercase">texnikumi</span>
           </div>
         </button>
 

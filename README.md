@@ -1,6 +1,6 @@
-# 🏛️ AIKMT — Andijon Ilg'or Mahorat Maktabi
+# 🏛️ AIKMT — Andijon Ilg'or Mahorat texnikumi
 
-> Andijon viloyatidagi yagona Prezident texnika kollejining to'liq veb-sayti.
+> Andijon viloyatidagi yagona Prezident texnikumi to'liq veb-sayti.
 
 **Stack:** React 18 · TailwindCSS 3 · GSAP 3.12 · Vite 5
 
@@ -145,4 +145,4 @@ AIKMT-college/
 
 ---
 
-*© 2025 Andijon Ilg'or Mahorat Maktabi. Barcha huquqlar himoyalangan.*
+*© 2025 Andijon Ilg'or Mahorat texnikumi. Barcha huquqlar himoyalangan.*
